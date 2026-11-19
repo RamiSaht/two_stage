@@ -1,0 +1,425 @@
+{
+ "lstm+none": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 128,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.002221740896347904,
+   "WEIGHT_DECAY": 1.2340427119164417e-05,
+   "BATCH_SIZE": 64
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 19,
+  "score": 5.223139104092872
+ },
+ "lstm+embed": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 64,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 64,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 4,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.009857369653291332,
+   "WEIGHT_DECAY": 0.00012323515536005866,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "1h",
+  "window_days": 7.0,
+  "window": 168,
+  "stat_set": "avg_std",
+  "epochs": 13,
+  "score": 5.5390386337813835
+ },
+ "lstm+head_linear": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 16,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.003000764058664353,
+   "WEIGHT_DECAY": 0.00019676020104352783,
+   "BATCH_SIZE": 64
+  },
+  "resample_freq": "24h",
+  "window_days": 28.0,
+  "window": 28,
+  "stat_set": "avg_std",
+  "epochs": 17,
+  "score": 6.457402235208512
+ },
+ "lstm+head_mlp": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 64,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.00444579904036306,
+   "WEIGHT_DECAY": 1.967387907111164e-05,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "24h",
+  "window_days": 28.0,
+  "window": 28,
+  "stat_set": "avg_std",
+  "epochs": 11,
+  "score": 5.931648925482382
+ },
+ "lstm+separate": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 16,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.0007259457479364269,
+   "WEIGHT_DECAY": 1.0208556460577787e-05,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "8h",
+  "window_days": 28.0,
+  "window": 84,
+  "stat_set": "avg_std",
+  "epochs": 21,
+  "score": 6.054946450746502
+ },
+ "cnn+none": {
+  "params": {
+   "CNN_kernel_size": 7,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "avg",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 16,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.006097025297491433,
+   "WEIGHT_DECAY": 0.000497406217496841,
+   "BATCH_SIZE": 32
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 22,
+  "score": 6.008928471631166
+ },
+ "cnn+embed": {
+  "params": {
+   "CNN_kernel_size": 7,
+   "CNN_out_channels": [
+    32,
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 64,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.00024575356777944426,
+   "WEIGHT_DECAY": 2.1210837489893257e-05,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 8,
+  "score": 5.361413198119259
+ },
+ "cnn+head_linear": {
+  "params": {
+   "CNN_kernel_size": 5,
+   "CNN_out_channels": [
+    16,
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.002909835862967844,
+   "WEIGHT_DECAY": 0.00010111863263035986,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "1h",
+  "window_days": 14.0,
+  "window": 336,
+  "stat_set": "avg_std",
+  "epochs": 1,
+  "score": 4.47455029808395
+ },
+ "cnn+head_mlp": {
+  "params": {
+   "CNN_kernel_size": 7,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "avg",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.009928010930043292,
+   "WEIGHT_DECAY": 0.0769719214478494,
+   "BATCH_SIZE": 32
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 15,
+  "score": 3.503441438531766
+ },
+ "cnn+separate": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    16,
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 1,
+   "SHARED_FC_SIZE": 64,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.00028467934207245335,
+   "WEIGHT_DECAY": 1.1944241144845708e-06,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "8h",
+  "window_days": 14.0,
+  "window": 42,
+  "stat_set": "avg_std",
+  "epochs": 8,
+  "score": 6.313754820321612
+ },
+ "cnn_lstm+none": {
+  "params": {
+   "CNN_kernel_size": 7,
+   "CNN_out_channels": [
+    16,
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 128,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 32,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.000690046357416319,
+   "WEIGHT_DECAY": 5.102893914332462e-06,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "1h",
+  "window_days": 7.0,
+  "window": 168,
+  "stat_set": "avg_std",
+  "epochs": 4,
+  "score": 5.861024639399051
+ },
+ "cnn_lstm+embed": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 16,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 32,
+   "HEAD_NEURONS": 32,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.009444451605892142,
+   "WEIGHT_DECAY": 1.913545395378559e-05,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "1h",
+  "window_days": 14.0,
+  "window": 336,
+  "stat_set": "avg_std",
+  "epochs": 19,
+  "score": 3.952377859616476
+ },
+ "cnn_lstm+head_linear": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32,
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 64,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.006321732490144022,
+   "WEIGHT_DECAY": 0.001463886097662143,
+   "BATCH_SIZE": 64
+  },
+  "resample_freq": "1h",
+  "window_days": 7.0,
+  "window": 168,
+  "stat_set": "avg_std",
+  "epochs": 22,
+  "score": 6.724355127614959
+ },
+ "cnn_lstm+head_mlp": {
+  "params": {
+   "CNN_kernel_size": 5,
+   "CNN_out_channels": [
+    32,
+    64
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.0028176046095431577,
+   "WEIGHT_DECAY": 3.820676112646927e-06,
+   "BATCH_SIZE": 32
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 12,
+  "score": 5.789474156534948
+ },
+ "cnn_lstm+separate": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32,
+    64
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 32,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 16,
+   "HEAD_NEURONS": 64,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.5,
+   "FC_DROPOUT": 0.5,
+   "HEAD_DROPOUT": 0.5,
+   "LEARNING_RATE": 0.003743309561243858,
+   "WEIGHT_DECAY": 1.0224171518555793e-06,
+   "BATCH_SIZE": 32
+  },
+  "resample_freq": "1h",
+  "window_days": 28.0,
+  "window": 672,
+  "stat_set": "avg_std",
+  "epochs": 10,
+  "score": 3.3527814392474853
+ },
+ "constant": {
+  "params": {
+   "CNN_kernel_size": 3,
+   "CNN_out_channels": [
+    32
+   ],
+   "CNN_POOL": "flatten",
+   "LSTM_hidden_size": 16,
+   "LSTM_num_layers": 2,
+   "SHARED_FC_SIZE": 64,
+   "HEAD_NEURONS": 16,
+   "EMB_DIM": 2,
+   "CNN_DROPOUT": 0.2,
+   "FC_DROPOUT": 0.0,
+   "HEAD_DROPOUT": 0.1,
+   "LEARNING_RATE": 0.001,
+   "WEIGHT_DECAY": 0.001,
+   "BATCH_SIZE": 16
+  },
+  "resample_freq": "8h",
+  "window_days": 14.0,
+  "window": 42,
+  "stat_set": "avg_std",
+  "epochs": 0,
+  "score": 7.560270354780368
+ }
+}
